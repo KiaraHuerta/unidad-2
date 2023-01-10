@@ -1,0 +1,99 @@
+h1{
+    padding-top: 220px;
+    font-family: 'Aclonica';
+    font-size: 50px;
+}
+body{
+    font-family: 'Aclonica';
+    background-image: url(img/fondo-mariposa.jpg);
+    text-align: center;
+    font-size: 30px;
+}
+input{
+    border: solid black 2px ;
+    border-radius: 7px;
+    background-color: rgb(174, 174, 245);
+    font-size: 25px;
+}
+button{
+    background-color:rgb(174, 174, 245) ;
+    font-family:'Aclonica' ;
+    border: solid 1px rgb(147, 147, 214);
+    font-size: 25px;
+    border-bottom: solid 1px rgb(129, 129, 224)
+    
+}
+
+#letra{
+    color: white;
+    text-shadow:
+    0 0 7px rgb(252, 252, 253),
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px rgb(27, 12, 243),
+    0 0 82px rgb(20, 55, 253),
+    0 0 92px rgb(25, 0, 255),
+    0 0 102px rgb(57, 38, 228),
+    0 0 151px rgb(58, 67, 199);
+}
+#emboss{
+    color: #3c3fe7;
+            text-shadow: -2px 2px 4px rgba(0, 0, 0, 0.5),
+                2px -2px 0 rgba(255, 255, 255, 0.9);
+}
+#shadow{ 
+    color: blue;
+            text-shadow: black,white;
+       
+}
+h1{
+
+    font-size: 4.2rem;
+  animation: flicker 1.5s infinite alternate;     
+}
+
+/* Flickering animation */
+@keyframes flicker {
+    
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+
+      text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px rgb(38, 0, 255),
+      0 0 80px rgb(40, 22, 204),
+      0 0 90px rgb(20, 83, 255),
+      0 0 100px  rgb(20, 83, 255),
+      0 0 150px  rgb(20, 83, 255);
+  
+  }
+  
+  20%, 24%, 55% {        
+      text-shadow: none;
+  }    
+}
+
+
+/* Additional styling */
+#video_background {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1000;
+    overflow: hidden;
+    }
+    #video_pattern {
+    background:#fff;
+    position: fixed;
+    opacity: 0.8;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    }
